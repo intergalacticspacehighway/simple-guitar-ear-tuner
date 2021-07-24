@@ -1,3 +1,7 @@
+button {
+  all: unset;
+}
+
 html {
   --border-color: rgb(237, 129, 237);
 }
@@ -12,7 +16,6 @@ html {
 }
 
 .btn {
-  all: unset;
   padding: 0.75rem 1rem;
   background-color: rgb(31, 41, 55);
   border-radius: 0.5rem;
