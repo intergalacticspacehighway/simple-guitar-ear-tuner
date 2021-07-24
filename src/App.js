@@ -77,7 +77,13 @@ function App() {
   return (
     <div className="App">
       <h1>Simple Guitar Ear Tuner</h1>
-      <br />
+      <p>
+        Play a note below and try to match it's frequency with your guitar's
+        note
+      </p>
+      <p style={{ color: "var(--border-color)", fontWeight: "bold" }}>
+        Note: Reduce the system volume before playing a note
+      </p>
       <br />
       <button className="btn btn-secondary" onClick={incrementOctave}>
         Increment Octave
@@ -99,7 +105,6 @@ function App() {
           </button>
         );
       })}
-      <br />
       <div style={{ marginBottom: 20, marginRight: 20, marginLeft: "auto" }}>
         <GithubLink />
       </div>
