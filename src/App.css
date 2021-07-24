@@ -45,3 +45,8 @@ path {
 p {
   margin: 0.5rem;
 }
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}

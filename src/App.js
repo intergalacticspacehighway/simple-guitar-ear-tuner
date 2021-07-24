@@ -85,15 +85,21 @@ function App() {
         Note: Reduce the system volume before playing a note
       </p>
       <br />
-      <button className="btn btn-secondary" onClick={incrementOctave}>
+      <button
+        disabled={!playing}
+        className="btn btn-secondary"
+        onClick={incrementOctave}
+      >
         Increment Octave
       </button>
-      <button className="btn btn-secondary" onClick={decrementOctave}>
+      <button
+        disabled={!playing}
+        className="btn btn-secondary"
+        onClick={decrementOctave}
+      >
         Decrement Octave
       </button>
       <br />
-      <br />
-      <hr />
       {notes.map((note) => {
         return note === currentNote && playing ? (
           <button className="btn" key={note} onClick={handleStop}>
